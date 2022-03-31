@@ -1,0 +1,277 @@
+/*Desarrollado por: Gemma Batlle*/
+/*Revisado: Marzo 2022*/
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@font-face
+{
+	font-family: 'Caviar Dreams';
+	src: url(../Tipografia/CaviarDreams.ttf);
+}
+
+@font-face
+{
+	font-family: 'Raleway';
+	src: url(../Tipografia/Raleway-VariableFont_wght.ttf);
+}
+
+:root
+{
+	--beige: #decdbe;
+	--greybrown: #5c5552;
+	--midbrown: #715c56;
+	--darkbrown: #433633;
+	--white: #ffffff;
+}
+
+.tituloPrincipal
+{
+	font-family: 'Caviar Dreams';
+	font-size: 1.5rem;
+	color: var(--darkbrown);
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 2px;
+}
+
+.tituloSecundario
+{
+	font-family: 'Caviar Dreams';
+	font-size: 1.3rem;
+	color: var(--darkbrown);
+	text-align: left;
+	margin: 30px;
+}
+
+.tituloSecundarioB
+{
+	font-family: 'Caviar Dreams';
+	font-size: 1.3rem;
+	color: var(--white);
+	text-align: left;
+	margin: 30px;
+}
+
+.textoPrincipal
+{
+	font-family: 'Raleway';
+	font-size: 1rem;
+}
+
+.textoPrincipalB
+{
+	font-family: 'Raleway';
+	font-size: 1rem;
+	color: var(--white);
+}
+
+#navPrincipal
+{
+	width: 100%;
+	height: auto;
+	position: fixed;
+	background-color: var(--beige);
+	z-index: 10;
+}
+
+#navLogo
+{
+	width: 100%;
+	height: auto;
+	display: flex;
+	align-content: center;
+	margin: 10px auto;
+	transition: height 1s ease;
+	overflow: hidden;
+}
+
+#navLogo a 
+{
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#navLogo img
+{
+	max-height: 70px;
+}
+
+#navMenu
+{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: space-around;
+	margin: 10px auto;
+}
+
+.navElements
+{
+	font-family: 'Caviar Dreams';
+	font-size: 1.5rem;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	list-style: none;
+	margin: auto;
+}
+
+.navElements a 
+{
+	text-decoration: none;
+	color: var(--darkbrown);
+}
+
+.navElements:hover a
+{
+	color: var(--white);
+}
+
+#toggle
+{
+	display: none;
+}
+
+footer
+{
+	width: 100%;
+	height: 500px;
+	background-color: var(--beige);
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+}
+
+.contenedorFooter
+{
+	width: 50%;
+	height: auto;
+	margin: auto;
+}
+
+.contenedorFooter form 
+{
+	background-color: var(--midbrown);
+	border-top-right-radius: 80px;
+	border-bottom-left-radius: 80px;
+	width: 300px;
+	height: 350px;
+	padding: 30px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: auto;
+}
+
+.contenedorFooter form label
+{
+	font-family: 'Raleway';
+	font-size: 1rem;
+	color: var(--white);
+}
+
+.contenedorFooter form input
+{
+	width: 90%;
+	margin: 10px;
+}
+
+.contenedorFooter img 
+{
+	width: auto;
+	height: 350px;
+}
+
+.contenedorFooter img:hover
+{
+	filter: brightness(0.5);
+} 
+
+footer p 
+{
+	margin: auto 10px;
+	font-family: 'Raleway';
+	font-size: .8rem;
+}
+
+
+@media only screen and (max-width: 850px){
+	#navPrincipal{
+	height: auto;
+	display: block;
+	}
+	#navPrincipal #navLogo{
+	display: none;
+	}
+	#navMenu{
+	display: none;
+	}
+	#navMenu.active{
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	} 
+	#navMenu.active li{
+	margin: 20px 0;
+	text-align: center;
+	}
+	#toggle{
+	position: relative;
+	width: 30px;
+	height: 30px;
+	margin: 15px;
+	cursor: pointer;
+	display: block;
+	}
+	#toggle:before{
+	content: '';
+	position: absolute;
+	top: 7px;
+	width: 100%;
+	height: 2px;
+	background: #fff;
+	}
+	#toggle:after{
+	content: '';
+	position: absolute;
+	bottom: 7px;
+	width: 100%;
+	height: 2px;
+	background: #fff;
+	}
+	#navPrincipal.active #toggle:before{
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(45deg);
+	}
+	#navPrincipal.active #toggle:after{
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(-45deg);
+	}
+	footer {
+    height: auto;
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: repeat(2, 1fr);
+	}
+	.contenedorFooter {
+    width: 90%;
+    height: auto;
+	}
+	.contenedorFooter form {
+    width: 80%;
+    height: auto;
+    margin: 10px;
+	}
+	.contenedorFooter img {
+    width: 100%;
+    height: auto;
+	}
+}

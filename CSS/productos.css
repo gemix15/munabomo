@@ -1,0 +1,206 @@
+/*Desarrollado por: Gemma Batlle*/
+/*Revisado: Marzo 2022*/
+
+:root
+{
+	--beige: #decdbe;
+	--greybrown: #5c5552;
+	--midbrown: #715c56;
+	--darkbrown: #433633;
+	--white: #ffffff;
+}
+
+#sliderPersonaliza
+{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.mySlides 
+{
+  position: relative;
+}
+
+.mySlides img 
+{
+	width: 100%;
+	height: auto;
+}
+
+.prev, .next 
+{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next 
+{
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover 
+{
+  background-color: var(--midbrown);
+}
+
+.text 
+{
+	font-size: 10rem;
+	color: var(--white);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.fade 
+{
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+#sectionPestañas
+{
+	width: 60%;
+	height: auto;
+	margin: 15px auto;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+}
+
+.pestaña 
+{
+	width: 150px;
+	height: 150px;
+	margin: auto;
+	position: relative;
+	cursor: pointer;
+}
+
+.pestaña img
+{
+	width: 100%;
+	height: auto;
+	border-radius: 25%;
+}
+
+.pestaña:hover img
+{
+	filter: brightness(0.4);
+} 
+
+/*.pestaña:nth-child(1){
+	background-image: url(../IMG/pestañasProductos/pendientes.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+} 
+
+.pestaña:nth-child(2){
+	background-image: url(../IMG/pestañasProductos/minis.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+} 
+
+.pestaña:nth-child(3){
+	background-image: url(../IMG/pestañasProductos/collares.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+} 
+
+.pestaña:nth-child(4){
+	background-image: url(../IMG/pestañasProductos/pulseras.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+} 
+
+.pestaña:nth-child(5){
+	background-image: url(../IMG/pestañasProductos/accesorios.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+} */
+
+.textP
+{
+	visibility: hidden;
+}
+
+.pestaña:hover .textP 
+{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 1.2em;
+	color: var(--white);
+	visibility: visible;
+}
+
+#sectionProductos
+{
+	width: 100%;
+	height: auto;
+}
+
+.princProductos
+{
+	width: 70%;
+	height: auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	margin: 40px auto;
+}
+
+#minis, #collares, #pulseras, #accesorios
+{
+	display: none;
+}
+
+.contProductos
+{
+	margin: 20px;
+	position: relative;
+}
+
+.contProductos img 
+{
+	width: 100%;
+	height: auto;
+	transition: filter 1s;
+	border-top-right-radius: 80px;
+	border-bottom-left-radius: 80px;
+}
+
+.contProductos:hover img 
+{
+	filter: brightness(0.3);
+}
+
+.contProductos p 
+{
+	visibility: hidden;
+}
+
+.contProductos:hover p
+{
+	visibility: visible;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 2em;
+}

@@ -1,0 +1,164 @@
+/*Desarrollado por: Gemma Batlle*/
+/*Revisado: Marzo 2022*/
+
+:root
+{
+	--beige: #decdbe;
+	--greybrown: #5c5552;
+	--midbrown: #715c56;
+	--darkbrown: #433633;
+	--white: #ffffff;
+}
+
+#sliderNovedades
+{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.mySlides 
+{
+  position: relative;
+}
+
+.mySlides img 
+{
+	width: 100%;
+	height: auto;
+}
+
+.prev, .next 
+{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next 
+{
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover 
+{
+  background-color: var(--midbrown);
+}
+
+.text 
+{
+	font-size: 10rem;
+	color: var(--white);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.fade 
+{
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+#contenedorNovedades
+{
+	width: 80%;
+	height: auto;
+	margin: auto;
+}
+
+.masonry 
+{
+	margin-top: 50px;
+	transition: all .5s ease-in-out;
+	column-gap: 30px;
+	column-fill: initial;
+}
+
+.masonry .brick 
+{
+	margin-bottom: 30px;
+	display: inline-block; 
+	vertical-align: top; 
+	position: relative;
+}
+
+.masonry .brick img 
+{
+	width: 100%;
+	transition: all .5s ease-in-out;
+	backface-visibility: hidden; 
+	transition: all 1s;
+}
+
+.brick #nov1
+{
+	display: block;
+}
+
+.brick #nov2
+{
+	display: none;
+}
+
+.brick:hover #nov1
+{
+	display: none;
+}
+
+.brick:hover #nov2
+{
+	display: block;
+}
+
+.masonry .brick:hover img 
+{
+	opacity: .75;
+}
+
+.brick h2
+{
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+	display: none;	
+}
+
+.brick:hover h2
+{
+	display: block;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .masonry {
+    column-count: 2;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .desc {
+    font-size: 1.25em;
+  }
+
+  .intro {
+    letter-spacing: 1px;
+  }
+
+  .masonry {
+    column-count: 3;
+  }
+}

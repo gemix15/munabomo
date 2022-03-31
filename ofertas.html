@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Gemma Batlle">
+	<meta name="copyright" content="MunaBomo">
+	<meta name="revised" content="March 2022">
+	<meta name="keywords" content="jewelry, muna, bomo, artesanal">
+	<meta name="description" content="Muna Bomo es una marca de joyería artesanal">
+	<link rel="stylesheet" href="CSS/style.css">
+	<link rel="stylesheet" href="css/ofertas.css">
+	<link rel="stylesheet" href="css/all.min.css">
+	<script type="text/javascript" src="js/script.js"></script>
+	<script src="js/all.min.js"></script>
+	<title>MunaBomo</title>
+</head>
+<body>
+	<nav id="navPrincipal" class="navPrincipal">
+		<div id="navLogo">
+			<a href="index.html"><img src="img/logo.png" alt="logo MunaBomo"></a>
+		</div>
+		<div id="toggle" onclick="toggle()"></div>
+		<ul id="navMenu" class="navMenu">
+			<li class="navElements"><a href="index.html">Inicio</a></li>
+			<li class="navElements"><a href="marca.html">Marca</a></li>
+			<li class="navElements"><a href="novedades.html">Novedades</a></li>
+			<li class="navElements"><a href="ofertas.html">Ofertas</a></li>
+			<li class="navElements"><a href="productos.html">Productos</a></li>
+		</ul>	
+	</nav>
+
+	<section id="sliderOfertas">
+		<div class="mySlides fade">
+			<img src="IMG/SliderOfertas/ofertas1.JPG">
+			<div class="text tituloSecundario">Ofertas</div>
+	 	</div>
+		<div class="mySlides fade">
+			<img src="IMG/SliderOfertas/ofertas2.JPG">
+			<div class="text tituloSecundario">Ofertas</div>
+		</div>
+	    <div class="mySlides fade">
+		    <img src="IMG/SliderOfertas/ofertas4.JPG">
+		    <div class="text tituloSecundario">Ofertas</div>
+	    </div>
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</section>
+
+	<section id="contenedorNovedades">
+		<div class="masonry">
+			<div class="brick">
+				<img src="IMG/Ofertas/ofertas1.JPG" alt="novedades joyeria">
+				<h2 class="tituloSecundarioB">Diademas Scrunchies <br>8€</h2>
+			</div>
+			<div class="brick">
+				<img src="IMG/Ofertas/ofertas2.JPG" alt="novedades joyeria">
+				<h2 class="tituloSecundarioB">Combo Milena <br>14€</h2>
+			</div>
+			<div class="brick">
+				<img src="IMG/Ofertas/ofertas3.JPG" alt="novedades joyeria">
+				<h2 class="tituloSecundarioB">Combo Susan <br>22€</h2>
+			</div>
+			<div class="brick">
+				<img src="IMG/Ofertas/ofertas4.JPG" alt="novedades joyeria">
+				<h2 class="tituloSecundarioB">Combo Sia <br>22€</h2>
+			</div>
+			<div class="brick">
+				<img src="IMG/Ofertas/ofertas5.JPG" alt="novedades joyeria">
+				<h2 class="tituloSecundarioB">Combo Dakota <br>22€</h2>
+			</div>
+			<div class="brick">
+				<img src="IMG/Ofertas/ofertas6.JPG" alt="novedades joyeria">
+				<h2 class="tituloSecundarioB">Combo Elsa <br>29€</h2>
+			</div>
+			<div class="brick">
+				<img src="IMG/Ofertas/ofertas7.JPG" alt="novedades joyeria">
+				<h2 class="tituloSecundarioB">Combo Claudia <br>32€</h2>
+			</div>
+			<div class="brick">
+				<img src="IMG/Ofertas/ofertas8.JPG" alt="novedades joyeria">
+				<h2 class="tituloSecundarioB">Combo Carolina <br>25€</h2>
+			</div>
+			<div class="brick">
+				<img src="IMG/Ofertas/ofertas9.JPG" alt="novedades joyeria">
+				<h2 class="tituloSecundarioB">Combo Mia <br>25€</h2>
+			</div>
+		</div>
+	</section>
+
+
+	<footer>
+		<div class="contenedorFooter">
+			<h2 class="tituloSecundario">Contacta con nosotros</h2>
+			<form action="mailto:munajoies@gmail.com" method="post" enctype="text/plain">
+				<label for="nombre">Nombre:</label>
+				<input type="text" id="nombre">
+				<label for="email">Email:</label>
+				<input type="text" id="email">
+				<label for="asunto">Asunto:</label>
+				<input type="text" id="asunto">
+				<label for="mensaje">Mensaje:</label>
+				<input type="text" id="mensaje">
+				<input type="submit" name="Enviar">
+			</form>
+		</div>
+		<div class="contenedorFooter">
+			<h2 class="tituloSecundario">Síguenos en Instagram</h2>
+			<a href="https://www.instagram.com/muna.bomo/"><img src="img/instagramProfile.png" alt="instagram"></a>
+		</div>
+		<p>Muna Bomo, 2022. Todos los derechos reservados.</p>
+	</footer>
+	
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript">
+		function toggle(){
+			var sec = document.getElementById('navPrincipal');
+			var nav = document.getElementById('navMenu');
+			sec.classList.toggle('active');
+			nav.classList.toggle('active');
+		}
+	</script>
+</body>
+</html>

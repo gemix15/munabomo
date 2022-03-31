@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Gemma Batlle">
+	<meta name="copyright" content="MunaBomo">
+	<meta name="revised" content="March 2022">
+	<meta name="keywords" content="jewelry, muna, bomo, artesanal">
+	<meta name="description" content="Muna Bomo es una marca de joyería artesanal">
+	<link rel="stylesheet" href="CSS/style.css">
+	<link rel="stylesheet" href="css/novedades.css">
+	<link rel="stylesheet" href="css/all.min.css">
+	<script type="text/javascript" src="js/script.js"></script>
+	<script src="js/all.min.js"></script>
+	<title>MunaBomo</title>
+</head>
+<body>
+	<nav id="navPrincipal" class="navPrincipal">
+		<div id="navLogo">
+			<a href="index.html"><img src="img/logo.png" alt="logo MunaBomo"></a>
+		</div>
+		<div id="toggle" onclick="toggle()"></div>
+		<ul id="navMenu" class="navMenu">
+			<li class="navElements"><a href="index.html">Inicio</a></li>
+			<li class="navElements"><a href="marca.html">Marca</a></li>
+			<li class="navElements"><a href="novedades.html">Novedades</a></li>
+			<li class="navElements"><a href="ofertas.html">Ofertas</a></li>
+			<li class="navElements"><a href="productos.html">Productos</a></li>
+		</ul>	
+	</nav>
+
+	<section id="sliderNovedades">
+		<div class="mySlides fade">
+			<img src="IMG/SliderNovedades/novedades1.JPG">
+			<div class="text tituloSecundario">Novedades</div>
+	 	</div>
+		<div class="mySlides fade">
+			<img src="IMG/SliderNovedades/novedades2.JPG">
+			<div class="text tituloSecundario">Novedades</div>
+		</div>
+	    <div class="mySlides fade">
+		    <img src="IMG/SliderNovedades/novedades3.JPG">
+		    <div class="text tituloSecundario">Novedades</div>
+	    </div>
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</section>
+
+	<section id="contenedorNovedades">
+		<div class="masonry">
+			<div class="brick">
+				<img src="IMG/Novedades/novedades1.JPG" alt="novedades joyeria" id="nov1">
+				<img src="IMG/Novedades/novedades1_1.JPG" alt="novedades joyeria" id="nov2">
+				<h2 class="tituloSecundario">Pendientes Petra <br>25€</h2>
+			</div>
+			<div class="brick">
+				<img src="IMG/Novedades/novedades2.JPG" alt="novedades joyeria" id="nov1">
+				<img src="IMG/Novedades/novedades2_1.JPG" alt="novedades joyeria" id="nov2">
+				<h2 class="tituloSecundario">Pendientes Briana <br>20€</h2>
+			</div>
+			<div class="brick">
+				<img src="IMG/Novedades/novedades3.JPG" alt="novedades joyeria" id="nov1">
+				<img src="IMG/Novedades/novedades3_1.JPG" alt="novedades joyeria" id="nov2">
+				<h2 class="tituloSecundario">Pendientes Graciela <br>30€</h2>
+			</div>
+			<div class="brick">
+				<img src="IMG/Novedades/novedades4.JPG" alt="novedades joyeria" id="nov1">
+				<img src="IMG/Novedades/novedades4_1.JPG" alt="novedades joyeria" id="nov2">
+				<h2 class="tituloSecundario">Pendientes Olimpia <br>27€</h2>
+			</div>
+			<div class="brick">
+				<img src="IMG/Novedades/novedades5.JPG" alt="novedades joyeria" id="nov1">
+				<img src="IMG/Novedades/novedades5_1.JPG" alt="novedades joyeria" id="nov2">
+				<h2 class="tituloSecundario">Pendientes Lola <br>27€</h2>
+			</div>
+			<div class="brick">
+				<img src="IMG/Novedades/novedades6.JPG" alt="novedades joyeria" id="nov1">
+				<img src="IMG/Novedades/novedades6_1.JPG" alt="novedades joyeria" id="nov2">
+				<h2 class="tituloSecundario">Pendientes Simona <br>30€</h2>
+			</div>
+			<div class="brick">
+				<img src="IMG/Novedades/novedades7.JPG" alt="novedades joyeria" id="nov1">
+				<img src="IMG/Novedades/novedades7_1.JPG" alt="novedades joyeria" id="nov2">
+				<h2 class="tituloSecundario">Pendientes Pia <br>15€</h2>
+			</div>
+			<div class="brick">
+				<img src="IMG/Novedades/novedades8.JPG" alt="novedades joyeria" id="nov1">
+				<img src="IMG/Novedades/novedades8_1.JPG" alt="novedades joyeria" id="nov2">
+				<h2 class="tituloSecundario">Pendientes Carolina <br>25€</h2>
+			</div>
+			<div class="brick">
+				<img src="IMG/Novedades/novedades9.JPG" alt="novedades joyeria" id="nov1">
+				<img src="IMG/Novedades/novedades9_1.JPG" alt="novedades joyeria" id="nov2">
+				<h2 class="tituloSecundario">Pendientes Dominic <br>25€</h2>
+			</div>
+		</div>
+	</section>
+
+
+	<footer>
+		<div class="contenedorFooter">
+			<h2 class="tituloSecundario">Contacta con nosotros</h2>
+			<form action="mailto:munajoies@gmail.com" method="post" enctype="text/plain">
+				<label for="nombre">Nombre:</label>
+				<input type="text" id="nombre">
+				<label for="email">Email:</label>
+				<input type="text" id="email">
+				<label for="asunto">Asunto:</label>
+				<input type="text" id="asunto">
+				<label for="mensaje">Mensaje:</label>
+				<input type="text" id="mensaje">
+				<input type="submit" name="Enviar">
+			</form>
+		</div>
+		<div class="contenedorFooter">
+			<h2 class="tituloSecundario">Síguenos en Instagram</h2>
+			<a href="https://www.instagram.com/muna.bomo/"><img src="img/instagramProfile.png" alt="instagram"></a>
+		</div>
+		<p>Muna Bomo, 2022. Todos los derechos reservados.</p>
+	</footer>
+	
+
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript">
+		function toggle(){
+			var sec = document.getElementById('navPrincipal');
+			var nav = document.getElementById('navMenu');
+			sec.classList.toggle('active');
+			nav.classList.toggle('active');
+		}
+	</script>
+</body>
+</html>

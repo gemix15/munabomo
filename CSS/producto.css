@@ -1,0 +1,196 @@
+/*Desarrollado por: Gemma Batlle*/
+/*Revisado: Marzo 2022*/
+
+:root
+{
+	--beige: #decdbe;
+	--greybrown: #5c5552;
+	--midbrown: #715c56;
+	--darkbrown: #433633;
+	--white: #ffffff;
+}
+
+#sliderProductos
+{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.mySlides 
+{
+  position: relative;
+}
+
+.mySlides img 
+{
+	width: 100%;
+	height: auto;
+}
+
+.prev, .next 
+{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next 
+{
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover 
+{
+  background-color: var(--midbrown);
+}
+
+.text 
+{
+	font-size: 10rem;
+	color: var(--white);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.fade 
+{
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.contProducto
+{
+    width: 100%;
+    height: auto;
+    padding: 10%;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.descProducto
+{
+    width: 100%;
+    height: auto;
+    margin: 0 60px;
+    position: relative;
+}
+
+.contenedor1
+{
+    padding: 10px;
+    width: 70%;
+}
+
+.contenedor2
+{
+    margin-top: 20px;
+}
+
+.descProducto img 
+{
+    outline: 1px solid white;
+    outline-offset: 15px;
+    width: 100%;
+    height: auto;
+}
+
+.botonPersonaliza
+{
+	text-decoration: none;
+	background-color: var(--greybrown);
+	color: var(--white);
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 7px;
+}
+
+.botonPersonaliza:hover
+{
+	color: var(--beige);
+} 
+
+#sectionPersonaliza
+{
+	width: 80%;
+	height: 900px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.contPersonaliza
+{
+    width: 50%;
+    height: 800px;
+    overflow: hidden;
+}
+
+#personalizar
+{
+    width: 80%;
+    margin: auto;
+    border-radius: 20px;
+    background-color: var(--beige);
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+
+.rowPersonalizar
+{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.contPersonaliza img 
+{
+    width: 100%;
+    height: auto;
+}
+
+.elemPersonaliza
+{
+    width: 100px;
+    height: 100px;
+    background-color: var(--darkbrown);
+}
+
+.elemActive
+{
+    border-style: solid;
+}
+
+#redondaP , #redondaD
+{
+    border-radius: 50%;
+}
+
+#azul
+{
+    background-color: teal;
+}
+
+#rosa 
+{
+    background-color: #910c27;
+}

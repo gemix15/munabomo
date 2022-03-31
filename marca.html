@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Gemma Batlle">
+	<meta name="copyright" content="MunaBomo">
+	<meta name="revised" content="March 2022">
+	<meta name="keywords" content="jewelry, muna, bomo, artesanal">
+	<meta name="description" content="Muna Bomo es una marca de joyería artesanal">
+	<link rel="stylesheet" href="CSS/style.css">
+	<link rel="stylesheet" href="css/marca.css">
+	<link rel="stylesheet" href="css/all.min.css">
+	<script type="text/javascript" src="js/script.js"></script>
+	<script src="js/all.min.js"></script>
+	<title>MunaBomo</title>
+</head>
+<body>
+	<nav id="navPrincipal" class="navPrincipal">
+		<div id="navLogo">
+			<a href="index.html"><img src="img/logo.png" alt="logo MunaBomo"></a>
+		</div>
+		<div id="toggle" onclick="toggle()"></div>
+		<ul id="navMenu" class="navMenu">
+			<li class="navElements"><a href="index.html">Inicio</a></li>
+			<li class="navElements"><a href="marca.html">Marca</a></li>
+			<li class="navElements"><a href="novedades.html">Novedades</a></li>
+			<li class="navElements"><a href="ofertas.html">Ofertas</a></li>
+			<li class="navElements"><a href="productos.html">Productos</a></li>
+		</ul>	
+	</nav>
+
+	<section class="secMarca">
+		<div class="contenedorMarca">
+			<img src="img/marca/historia.jpg" alt="historia">
+		</div>
+		<div class="contenedorMarca">
+			<h2 class="tituloSecundario">Historia</h2>
+			<p class="textoPrincipal">Muna es una marca de bisutería y joyería creada por una diseñadora de moda que adora los complementos y la artesanía.
+			<br>
+			Muna Joyas nace a partir de la ilusión de crear pequeñas piezas de joyería originales y únicas que te acompañarán en tus mejores momentos.
+			<br>
+			Una marca que quiere ofrecer productos de calidad a un precio muy económico siempre pensando en el diseño tanto funcinal como estético que nuestras clientas merecen.</p>
+		</div>
+	</section>
+	<section class="secMarca">
+		<div class="contenedorMarca">
+			<h2 class="tituloSecundario">Filosofía</h2>
+			<p class="textoPrincipal">El propósito de éste negocio es crear joyería única y personal para nuestras clientas con el fin de darle valor a nuestras joyas que las acompañarán en sus días especiales.
+			<br>
+			Por éste motivo utilizamos productos de calidad a la vez que económicos para poder llegar al máximo público y que de éste modo tengan un recuerdo especial de ese gran día.
+			</p>
+		</div>
+		<div class="contenedorMarca">
+			<img src="img/marca/filosofia.jpg" alt="historia">
+		</div>
+	</section>
+	<section class="secMarca">
+		<div class="contenedorMarca">
+			<img src="img/marca/historia.jpg" alt="historia">
+		</div>
+		<div class="contenedorMarca">
+			<h2 class="tituloSecundario">Materiales</h2>
+			<p class="textoPrincipal">La arcilla polimérica es el material principal de nuestra marca. Éste material es un polímero plástico moldeable y flexible que nos permite crear nuestras piezas con infinidad de formas.
+			<br>
+			Éste material es ideal para la creación de joyería ya que es súper ligero, lo que hace que sea muy cómodo de llevar. También es muy duradero dado que una vez cocido éste material se vuelve duro y difícil de romper o agrietar.
+			<br>
+			Para ensamblar nuestras joyas de arcilla utilizamos piezas de acero inoxidable bañado en oro, es una aleación que resiste la corrosión, perdura el brillo y tonalidad, es hipoalergénico y de fácil mantenimiento.
+			<br>
+			Otros materiales que utilizamos son perlas naturales, vidrio y piedras naturales, entre otros.</p>
+		</div>
+	</section>
+
+	<footer>
+		<div class="contenedorFooter">
+			<h2 class="tituloSecundario">Contacta con nosotros</h2>
+			<form action="mailto:munajoies@gmail.com" method="post" enctype="text/plain">
+				<label for="nombre">Nombre:</label>
+				<input type="text" id="nombre">
+				<label for="email">Email:</label>
+				<input type="text" id="email">
+				<label for="asunto">Asunto:</label>
+				<input type="text" id="asunto">
+				<label for="mensaje">Mensaje:</label>
+				<input type="text" id="mensaje">
+				<input type="submit" name="Enviar">
+			</form>
+		</div>
+		<div class="contenedorFooter">
+			<h2 class="tituloSecundario">Síguenos en Instagram</h2>
+			<a href="https://www.instagram.com/muna.bomo/"><img src="img/instagramProfile.png" alt="instagram"></a>
+		</div>
+		<p>Muna Bomo, 2022. Todos los derechos reservados.</p>
+	</footer>
+
+	<script type="text/javascript">
+		function toggle(){
+			var sec = document.getElementById('navPrincipal');
+			var nav = document.getElementById('navMenu');
+			sec.classList.toggle('active');
+			nav.classList.toggle('active');
+		}
+	</script>
+	
+</body>
+</html>

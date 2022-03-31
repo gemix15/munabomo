@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Gemma Batlle">
+	<meta name="copyright" content="MunaBomo">
+	<meta name="revised" content="March 2022">
+	<meta name="keywords" content="jewelry, muna, bomo, artesanal">
+	<meta name="description" content="Muna Bomo es una marca de joyería artesanal">
+	<link rel="stylesheet" href="CSS/style.css">
+	<link rel="stylesheet" href="css/productos.css">
+	<link rel="stylesheet" href="css/all.min.css">
+	<script type="text/javascript" src="js/script.js"></script>
+	<script src="js/all.min.js"></script>
+	<title>MunaBomo</title>
+</head>
+<body>
+	<nav id="navPrincipal" class="navPrincipal">
+		<div id="navLogo">
+			<a href="index.html"><img src="img/logo.png" alt="logo MunaBomo"></a>
+		</div>
+		<div id="toggle" onclick="toggle()"></div>
+		<ul id="navMenu" class="navMenu">
+			<li class="navElements"><a href="index.html">Inicio</a></li>
+			<li class="navElements"><a href="marca.html">Marca</a></li>
+			<li class="navElements"><a href="novedades.html">Novedades</a></li>
+			<li class="navElements"><a href="ofertas.html">Ofertas</a></li>
+			<li class="navElements"><a href="productos.html">Productos</a></li>
+		</ul>	
+	</nav>
+
+	<section id="sliderProductos">
+		<div class="mySlides fade">
+			<img src="IMG/SliderProductos/productos1.JPG">
+			<div class="text tituloSecundario">Productos</div>
+	 	</div>
+		<div class="mySlides fade">
+			<img src="IMG/SliderProductos/productos2.JPG">
+			<div class="text tituloSecundario">Productos</div>
+		</div>
+	    <div class="mySlides fade">
+		    <img src="IMG/SliderProductos/productos3.JPG">
+		    <div class="text tituloSecundario">Productos</div>
+	    </div>
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</section>
+
+	<section id="sectionPestañas">
+		<div class="pestaña" onclick="productPestaña('pendientes');">
+			<img src="img/pestañasProductos/pendientes.jpg" alt="productos">
+			<p class="textoPrincipal textP">Pendientes</p>
+		</div>
+		<div class="pestaña" onclick="productPestaña('minis');">
+			<img src="img/pestañasProductos/minis.jpg" alt="productos">
+			<p class="textoPrincipal textP">Minis</p>
+		</div>
+		<div class="pestaña" onclick="productPestaña('collares');">
+			<img src="img/pestañasProductos/collares.jpg" alt="productos">
+			<p class="textoPrincipal textP">Collares</p>
+		</div>
+		<div class="pestaña" onclick="productPestaña('pulseras');">
+			<img src="img/pestañasProductos/pulseras.jpg" alt="productos">
+			<p class="textoPrincipal textP">Pulseras</p>
+		</div>
+		<div class="pestaña" onclick="productPestaña('accesorios');">
+			<img src="img/pestañasProductos/accesorios.jpg" alt="productos">
+			<p class="textoPrincipal textP">Accesorios</p>
+		</div>
+	</section>
+
+	<section id="sectionProductos">
+<!-- Pestaña pendientes -->
+		<div class="princProductos" id="pendientes">
+			<a href="producto.html" class="contProductos">
+				<img src="IMG/Productos/Pendientes/pendientes1.JPG" alt="pendientes">
+				<p class="textoPrincipalB">Pendientes Penelope <br>30€</p>
+			</a>
+			<a href="producto.html" class="contProductos">
+				<img src="IMG/Productos/Pendientes/pendientes2.JPG" alt="pendientes">
+				<p class="textoPrincipalB">Pendientes Azahara <br>27€</p>
+			</a>
+			<a href="producto.html" class="contProductos">
+				<img src="IMG/Productos/Pendientes/pendientes3.JPG" alt="pendientes">
+				<p class="textoPrincipalB">Pendientes Salma <br>27€</p>
+			</a>
+			<a href="producto.html" class="contProductos">
+				<img src="IMG/Productos/Pendientes/pendientes4.JPG" alt="pendientes">
+				<p class="textoPrincipalB">Pendientes Fatima <br>23€</p>
+			</a>
+			<a href="producto.html" class="contProductos">
+				<img src="IMG/Productos/Pendientes/pendientes5.JPG" alt="pendientes">
+				<p class="textoPrincipalB">Pendientes Violeta <br>23€</p>
+			</a>
+			<a href="producto.html" class="contProductos">
+				<img src="IMG/Productos/Pendientes/pendientes6.JPG" alt="pendientes">
+				<p class="textoPrincipalB">Pendientes Renata <br>25€</p>
+			</a>
+			<a href="producto.html" class="contProductos">
+				<img src="IMG/Productos/Pendientes/pendientes7.JPG" alt="pendientes">
+				<p class="textoPrincipalB">Pendientes Ava <br>30€</p>
+			</a>
+			<a href="producto.html" class="contProductos">
+				<img src="IMG/Productos/Pendientes/pendientes8.JPG" alt="pendientes">
+				<p class="textoPrincipalB">Pendientes Claudia <br>12€</p>
+			</a>
+			<a href="producto.html" class="contProductos">
+				<img src="IMG/Productos/Pendientes/pendientes9.JPG" alt="pendientes">
+				<p class="textoPrincipalB">Pendientes Aurora <br>22€</p>
+			</a>
+		</div>
+<!-- Pestaña minis -->
+		<div class="princProductos" id="minis">
+			<a href="producto.html" class="contProductos">
+				<img src="IMG/Productos/minis/minis1.png" alt="minis">
+				<p class="textoPrincipalB">Combo Honey <br>28€</p>
+			</a>
+			<a href="producto.html" class="contProductos">
+				<img src="IMG/Productos/minis/minis2.png" alt="minis">
+				<p class="textoPrincipalB">Combo Colorful <br>32€</p>
+			</a>
+			<a href="producto.html" class="contProductos">
+				<img src="IMG/Productos/minis/minis3.png" alt="minis">
+				<p class="textoPrincipalB">Combo Holi <br>26€</p>
+			</a>
+			<a href="producto.html" class="contProductos">
+				<img src="IMG/Productos/minis/minis4.png" alt="minis">
+				<p class="textoPrincipalB">Combo Flamingo <br>34€</p>
+			</a>
+			<a href="producto.html" class="contProductos">
+				<img src="IMG/Productos/minis/minis5.png" alt="minis">
+				<p class="textoPrincipalB">Combo Lavanda <br>28€</p>
+			</a>
+			<a href="producto.html" class="contProductos">
+				<img src="IMG/Productos/minis/minis6.png" alt="minis">
+				<p class="textoPrincipalB">Combo Wave <br>30€</p>
+			</a>
+			<a href="producto.html" class="contProductos">
+				<img src="IMG/Productos/minis/minis7.png" alt="minis">
+				<p class="textoPrincipalB">Combo Sand <br>26€</p>
+			</a>
+			<a href="producto.html" class="contProductos">
+				<img src="IMG/Productos/minis/minis8.png" alt="minis">
+				<p class="textoPrincipalB">Combo Shine <br>34€</p>
+			</a>
+			<a href="producto.html" class="contProductos">
+				<img src="IMG/Productos/minis/minis9.png" alt="minis">
+				<p class="textoPrincipalB">Combo Salt <br>30€</p>
+			</a>
+		</div>
+<!-- Pestaña collares -->
+		<div class="princProductos" id="collares">
+			<a href="producto.html" class="contProductos">
+				<img src="IMG/Productos/collares/collares1.jpg" alt="collares">
+				<p class="textoPrincipalB">Collar Claudia <br>24€</p>
+			</a>
+			<a href="producto.html" class="contProductos">				<img src="IMG/Productos/collares/collares2.jpg" alt="collares">
+				<p class="textoPrincipalB">Collar Milena <br>18€</p>
+			</a>
+			<a href="producto.html" class="contProductos">
+				<img src="IMG/Productos/collares/collares3.jpg" alt="collares">
+				<p class="textoPrincipalB">Collar Priscila <br>28€</p>
+			</a>
+			<a href="producto.html" class="contProductos">
+				<img src="IMG/Productos/collares/collares4.jpg" alt="collares">
+				<p class="textoPrincipalB">Collar Daniela <br>26€</p>
+			</a>
+			<a href="producto.html" class="contProductos">
+				<img src="IMG/Productos/collares/collares5.jpg" alt="collares">
+				<p class="textoPrincipalB">Collar Berta <br>24€</p>
+			</a>
+			<a href="producto.html" class="contProductos">
+				<img src="IMG/Productos/collares/collares6.jpg" alt="collares">
+				<p class="textoPrincipalB">Collar Mirta <br>24€</p>
+			</a>
+			<a href="producto.html" class="contProductos">
+				<img src="IMG/Productos/collares/collares7.jpg" alt="collares">
+				<p class="textoPrincipalB">Collar Martina <br>20€</p>
+			</a>
+			<a href="producto.html" class="contProductos">
+				<img src="IMG/Productos/collares/collares8.jpg" alt="collares">
+				<p class="textoPrincipalB">Collar Gabriela <br>24€</p>
+			</a>
+			<a href="producto.html" class="contProductos">
+				<img src="IMG/Productos/collares/collares9.jpg" alt="collares">
+				<p class="textoPrincipalB">Collar Amara <br>26€</p>
+			</a>
+		</div>
+<!-- Pestaña pulseras -->
+		<div class="princProductos" id="pulseras">
+			<a href="producto.html" class="contProductos">
+				<img src="IMG/Productos/pulseras/pulseras1.jpg" alt="pulseras">
+				<p class="textoPrincipalB">Pulsera Marta <br>15€</p>
+			</a>
+			<a href="producto.html" class="contProductos">
+				<img src="IMG/Productos/pulseras/pulseras2.jpg" alt="pulseras">
+				<p class="textoPrincipalB">Pulsera Gisela <br>15€</p>
+			</a>
+			<a href="producto.html" class="contProductos">
+				<img src="IMG/Productos/pulseras/pulseras3.jpg" alt="pulseras">
+				<p class="textoPrincipalB">Pulsera Emma <br>15€</p>
+			</a>
+			<a href="producto.html" class="contProductos">
+				<img src="IMG/Productos/pulseras/pulseras4.jpg" alt="pulseras">
+				<p class="textoPrincipalB">Combo Lena <br>35€</p>
+			</a>
+			<a href="producto.html" class="contProductos">
+				<img src="IMG/Productos/pulseras/pulseras5.jpg" alt="pulseras">
+				<p class="textoPrincipalB">Combo Ona <br>35€</p>
+			</a>
+			<a href="producto.html" class="contProductos">
+				<img src="IMG/Productos/pulseras/pulseras6.jpg" alt="pulseras">
+				<p class="textoPrincipalB">Combo Agata <br>35€</p>
+			</a>
+			<a href="producto.html" class="contProductos">
+				<img src="IMG/Productos/pulseras/pulseras7.jpg" alt="pulseras">
+				<p class="textoPrincipalB">Combo Tina <br>35€</p>
+			</a>
+			<a href="producto.html" class="contProductos">
+				<img src="IMG/Productos/pulseras/pulseras8.jpg" alt="pulseras">
+				<p class="textoPrincipalB">Combo Cyntia <br>35€</p>
+			</a>
+			<a href="producto.html" class="contProductos">
+				<img src="IMG/Productos/pulseras/pulseras9.jpg" alt="pulseras">
+				<p class="textoPrincipalB">Combo Elisa <br>35€</p>
+			</a>
+		</div>
+<!-- Pestaña accesorios -->
+		<div class="princProductos" id="accesorios">
+			<a href="producto.html" class="contProductos">
+				<img src="IMG/Productos/accesorios/accesorios1.jpg" alt="accesorios">
+				<p class="textoPrincipalB">Diadema Fade <br>15€</p>
+			</a>
+			<a href="producto.html" class="contProductos">
+				<img src="IMG/Productos/accesorios/accesorios2.jpg" alt="accesorios">
+				<p class="textoPrincipalB">Diadema Tropic <br>15€</p>
+			</a>
+			<a href="producto.html" class="contProductos">
+				<img src="IMG/Productos/accesorios/accesorios3.jpg" alt="accesorios">
+				<p class="textoPrincipalB">Colgante Pale <br>15€</p>
+			</a>
+			<a href="producto.html" class="contProductos">
+				<img src="IMG/Productos/accesorios/accesorios4.jpg" alt="accesorios">
+				<p class="textoPrincipalB">Colgante Summer <br>15€</p>
+			</a>
+			<a href="producto.html" class="contProductos">
+				<img src="IMG/Productos/accesorios/accesorios5.jpg" alt="accesorios">
+				<p class="textoPrincipalB">Colgante Tangerine <br>15€</p>
+			</a>
+			<a href="producto.html" class="contProductos">
+				<img src="IMG/Productos/accesorios/accesorios6.jpg" alt="accesorios">
+				<p class="textoPrincipalB">Colgante Berry <br>15€</p>
+			</a>
+			<a href="producto.html" class="contProductos">
+				<img src="IMG/Productos/accesorios/accesorios7.jpg" alt="accesorios">
+				<p class="textoPrincipalB">Colgante Caribbean <br>15€</p>
+			</a>
+			<a href="producto.html" class="contProductos">
+				<img src="IMG/Productos/accesorios/accesorios8.jpg" alt="accesorios">
+				<p class="textoPrincipalB">Colgante Ocean <br>15€</p>
+			</a>
+			<a href="producto.html" class="contProductos">
+				<img src="IMG/Productos/accesorios/accesorios9.jpg" alt="accesorios">
+				<p class="textoPrincipalB">Colante Autumn <br>15€</p>
+			</a>
+		</div>
+
+		
+	</section>
+
+
+	<footer>
+		<div class="contenedorFooter">
+			<h2 class="tituloSecundario">Contacta con nosotros</h2>
+			<form action="mailto:munajoies@gmail.com" method="post" enctype="text/plain">
+				<label for="nombre">Nombre:</label>
+				<input type="text" id="nombre">
+				<label for="email">Email:</label>
+				<input type="text" id="email">
+				<label for="asunto">Asunto:</label>
+				<input type="text" id="asunto">
+				<label for="mensaje">Mensaje:</label>
+				<input type="text" id="mensaje">
+				<input type="submit" name="Enviar">
+			</form>
+		</div>
+		<div class="contenedorFooter">
+			<h2 class="tituloSecundario">Síguenos en Instagram</h2>
+			<a href="https://www.instagram.com/muna.bomo/"><img src="img/instagramProfile.png" alt="instagram"></a>
+		</div>
+		<p>Muna Bomo, 2022. Todos los derechos reservados.</p>
+	</footer>
+	
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript">
+		function toggle(){
+			var sec = document.getElementById('navPrincipal');
+			var nav = document.getElementById('navMenu');
+			sec.classList.toggle('active');
+			nav.classList.toggle('active');
+		}
+	</script>
+</body>
+</html>

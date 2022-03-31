@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Gemma Batlle">
+	<meta name="copyright" content="MunaBomo">
+	<meta name="revised" content="March 2022">
+	<meta name="keywords" content="jewelry, muna, bomo, artesanal">
+	<meta name="description" content="Muna Bomo es una marca de joyería artesanal">
+	<link rel="stylesheet" href="CSS/style.css">
+	<link rel="stylesheet" href="css/producto.css">
+	<link rel="stylesheet" href="css/all.min.css">
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/customImage.js"></script>
+	<script src="js/all.min.js"></script>
+	<title>MunaBomo</title>
+</head>
+<body>
+	<nav id="navPrincipal" class="navPrincipal">
+		<div id="navLogo">
+			<a href="index.html"><img src="img/logo.png" alt="logo MunaBomo"></a>
+		</div>
+		<div id="toggle" onclick="toggle()"></div>
+		<ul id="navMenu" class="navMenu">
+			<li class="navElements"><a href="index.html">Inicio</a></li>
+			<li class="navElements"><a href="marca.html">Marca</a></li>
+			<li class="navElements"><a href="novedades.html">Novedades</a></li>
+			<li class="navElements"><a href="ofertas.html">Ofertas</a></li>
+			<li class="navElements"><a href="productos.html">Productos</a></li>
+		</ul>	
+	</nav>
+
+	<section id="sliderPersonaliza">
+		<div class="mySlides fade">
+			<img src="IMG/SliderPersonaliza/personaliza1.jpg">
+			<div class="text tituloSecundario">Personaliza</div>
+	 	</div>
+		<div class="mySlides fade">
+			<img src="IMG/SliderPersonaliza/personaliza2.jpg">
+			<div class="text tituloSecundario">Personaliza</div>
+		</div>
+	    <div class="mySlides fade">
+		    <img src="IMG/SliderPersonaliza/personaliza3.jpg">
+		    <div class="text tituloSecundario">Personaliza</div>
+	    </div>
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</section>
+
+	<div class="contProducto">
+		<div class="descProducto contenedor2">
+    		<img src="IMG/Personaliza/cuadradoProsacuadradoD.jpg" alt="producto">
+    	</div>
+    	<div class="descProducto contenedor1">
+    		<h2 class="tituloSecundario">Pendientes Simona</h2>
+        
+    		<p class="textoPrincipal">Hechos con arcilla polimérica y acero inoxidable. Charm central con imitación de perla. Cierre posterior de silicona. <br> <br>
+    		*Producto hecho a mano, por ese motivo el tamaño y el patrón pueden cambiar de una pieza a otra.	
+        	</p>
+        	<a href="#" class="tituloSecundario botonPersonaliza">Personalizar</a>
+    	</div>
+    </div>
+
+    <section id="sectionPersonaliza">
+    	<div class="contPersonaliza">
+    		<h2 class="tituloSecundario">Pendientes Simona</h2>
+    		<div id="personalizar">
+    			<h2 class="tituloSecundario">Forma principal</h2>
+    			<div class="rowPersonalizar" id="formaPrincipal">
+    				<div class="elemPersonaliza elemActive" id="cuadradoP" onclick="setCustomImage(event)"></div>
+    				<div class="elemPersonaliza" id="redondaP" onclick="setCustomImage(event)"></div>
+    			</div>
+    			<h2 class="tituloSecundario">Color principal</h2>
+    			<div class="rowPersonalizar" id="colorPiedra">
+    				<div class="elemPersonaliza" id="azul" onclick="setCustomImage(event)"></div>
+    				<div class="elemPersonaliza elemActive" id="rosa" onclick="setCustomImage(event)"></div>
+    			</div>
+    			<h2 class="tituloSecundario">Forma decoración</h2>
+    			<div class="rowPersonalizar" id="formaDecoracion">
+       				<div class="elemPersonaliza elemActive" id="cuadradoD" onclick="setCustomImage(event)"></div>
+    				<div class="elemPersonaliza" id="redondaD" onclick="setCustomImage(event)"></div>
+    			</div>
+    		</div>
+    	</div>
+    	<div class="contPersonaliza">
+    		<img id="customImage" src="img/Personaliza/cuadradoProsacuadradoD.jpg" alt="personaliza">
+    	</div>
+    </section>
+
+
+
+
+
+
+	<footer>
+		<div class="contenedorFooter">
+			<h2 class="tituloSecundario">Contacta con nosotros</h2>
+			<form action="mailto:munajoies@gmail.com" method="post" enctype="text/plain">
+				<label for="nombre">Nombre:</label>
+				<input type="text" id="nombre">
+				<label for="email">Email:</label>
+				<input type="text" id="email">
+				<label for="asunto">Asunto:</label>
+				<input type="text" id="asunto">
+				<label for="mensaje">Mensaje:</label>
+				<input type="text" id="mensaje">
+				<input type="submit" name="Enviar">
+			</form>
+		</div>
+		<div class="contenedorFooter">
+			<h2 class="tituloSecundario">Síguenos en Instagram</h2>
+			<a href="https://www.instagram.com/muna.bomo/"><img src="img/instagramProfile.png" alt="instagram"></a>
+		</div>
+		<p>Muna Bomo, 2022. Todos los derechos reservados.</p>
+	</footer>
+	
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript">
+		toggle();
+	</script>
+</body>
+</html>
